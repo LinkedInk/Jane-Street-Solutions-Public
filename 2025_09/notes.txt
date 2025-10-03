@@ -1,0 +1,29 @@
+MY STEPS (to arrive at the most common wrong answer, reflections at the bottom)
+
+Extra rules/clues
+
+1) Hooks build and peel off like onion layers, hooks of adjacent sizes must share at least 2 edges
+2) Hooks contain multiple of the same number, meaning it cannot contain a number bigger than it can hold
+ 2.1) Hook capacity changes based on values outside the grid
+
+-With these 2 extra rules, all hooks except the 5x5 and the 6x6 can be fixed in position
+
+-Z and V pentominos can be fixed in position using values outside the grid, and the existing position of 8 and 9
+
+-U and X pentominos can be fixed in position based on the max number of numbers a hook can hold and values outside grid
+
+-The rest of the pentominos were guessed together at once
+    N must contain 2 7's
+    I must be horizontal otherwise there is no space
+
+THINGS I MISSED OUT (and therefore solved it incorrectly)
+1) Finally, the sum of the of the values in each pentomino must be a multiple of 5. 
+    I seem to have just not seen this line
+2) The filled squares must form a connected region. 
+    I thought it meant to be connected together to form a pentomino.
+    Rather than all the filled squares must be part of the same island.
+    Perhaps it would be better phrased as "form one connected region"
+
+
+
+
